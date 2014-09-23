@@ -30,7 +30,7 @@ docker run -v /local/path/to/tempest.conf:/etc/tempest/tempest.conf \
 Build your container with your own image name
 
 ```
-docker build -t <username>/tempest-in-docker
+docker build -t <username>/tempest-in-docker .
 ```
 
 ### Run tempest test suite
