@@ -30,4 +30,4 @@ RUN cd tempest && python setup.py install
 RUN cd tempest && testr init
 
 WORKDIR /tempest
-ENTRYPOINT ["testr", "run"]
+ENTRYPOINT ["testr", "run", "--subunit"]
