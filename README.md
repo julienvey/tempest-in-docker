@@ -10,7 +10,7 @@ You need two configuration files to run tempest
 Run your docker container
 ```
 docker run -v /local/path/to/tempest.conf:/etc/tempest/tempest.conf \
-           -v /local/path/to/accounts.yaml:/etc/tempest/accounts.yaml
+           -v /local/path/to/accounts.yaml:/etc/tempest/accounts.yaml \
            julienvey/tempest-in-docker
 ```
 This will run all tempest test on your OpenStack cloud
@@ -19,7 +19,7 @@ To run a subset of tests, e.g tempest.api.compute
 
 ```
 docker run -v /local/path/to/tempest.conf:/etc/tempest/tempest.conf \
-           -v /local/path/to/accounts.yaml:/etc/tempest/accounts.yaml
+           -v /local/path/to/accounts.yaml:/etc/tempest/accounts.yaml \
            julienvey/tempest-in-docker tempest.api.compute
 ```
 
